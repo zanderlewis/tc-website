@@ -10,22 +10,6 @@
     <meta name="keywords" content="Thai, Asian, Bistro, Food, Restaurant, Asian Fusion">
     <meta name="author" content="Thai Chili Asian Bistro">
     <title>Thai Chili | Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('nav a').click(function (e) {
-                e.preventDefault();
-
-                var url = $(this).attr('href');
-
-                $('#content').fadeOut(500, function () {
-                    $(this).load(url + ' #content', function () {
-                        $(this).fadeIn(500);
-                    });
-                });
-            });
-        });
-    </script>
 </head>
 
 <body>
