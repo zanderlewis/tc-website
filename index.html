@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thai Chili Asian Bistro">
+    <meta name="keywords" content="Thai, Asian, Bistro, Food, Restaurant, Asian Fusion">
+    <meta name="author" content="Thai Chili Asian Bistro">
+    <title>Thai Chili | Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav a').click(function (e) {
+                e.preventDefault();
+
+                var url = $(this).attr('href');
+
+                $('#content').fadeOut(500, function () {
+                    $(this).load(url + ' #content', function () {
+                        $(this).fadeIn(500);
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Thai Chili Asian Bistro</h1>
+    </header>
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <div class="center">
+            <div><img src="images/food1.jpg" alt="Food"></div>
+            <div><img src="images/food2.jpg" alt="Food"></div>
+            <div><img src="images/food3.jpg" alt="Food"></div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Thai Chili Asian Bistro.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thai Chili Asian Bistro">
+    <meta name="keywords" content="Thai, Asian, Bistro, Food, Restaurant, Asian Fusion">
+    <meta name="author" content="Thai Chili Asian Bistro">
+    <title>Thai Chili | Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav a').click(function (e) {
+                e.preventDefault();
+
+                var url = $(this).attr('href');
+
+                $('#content').fadeOut(500, function () {
+                    $(this).load(url + ' #content', function () {
+                        $(this).fadeIn(500);
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="content">
+    <header>
+        <h1>Thai Chili Asian Bistro</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="#" class="active">Contact</a>
+    </nav>
+    <main>
+        <div class="center">
+            <h2>Contact</h2>
+            <div class="a"><a href="tel:4237775055">(423) 777-5055 - (Ooltewah, TN)</a></div>
+            <div class="a"><a href="tel:8285054224">(828) 505-4224 - (Asheville, NC)</a></div>
+        </div>
+        <hr>
+        <div class="center">
+            <h2>Hours (Asheville, NC)</h2>
+            <p>Monday: Closed</p>
+            <p>Tuesday - Friday: 11:00am - 3:00pm, 5:00pm - 9:00pm</p>
+            <p>Saturday - Sunday: 11:00am - 9:00pm</p>
+            <br>
+            <h2>Hours (Ooltewah, TN)</h2>
+            <p>Monday: Closed</p>
+            <p>Tuesday - Thursday: 11:00am - 3:00pm, 5:00pm - 9:00pm</p>
+            <p>Friday: 11:00am - 3:00pm, 5:00pm - 9:30pm</p>
+            <p>Saturday: 12:00pm - 9:30pm</p>
+            <p>Sunday: 11:00am - 9:00pm</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Thai Chili Asian Bistro.
+    </footer>
+</div>
+</body>
+
+</html>

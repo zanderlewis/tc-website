@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thai Chili Asian Bistro">
+    <meta name="keywords" content="Thai, Asian, Bistro, Food, Restaurant, Asian Fusion">
+    <meta name="author" content="Thai Chili Asian Bistro">
+    <title>Thai Chili | Menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav a').click(function (e) {
+                e.preventDefault();
+
+                var url = $(this).attr('href');
+
+                $('body').fadeOut(500, function () {
+                    $(this).load(url + ' body', function () {
+                        $(this).fadeIn(500);
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Thai Chili Asian Bistro</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <div class="center">
+            <h2>Menu</h2>
+            <p>
+                (GF) Gluten Free
+            </p>
+            <p>
+                Most things are vegetarian and can be made gluten free and/or vegan.
+            </p>
+            <hr>
+        </div>
+        <details>
+<summary><h2 class="center">Appetizer</h2></summary>
+<ul>
+  <li><div class="menu-item">A1. Spring Roll (2): Vegetable fried spring rolls with sweet and sour sauce. - $3.50</div></li>
+  <li><div class="menu-item">A2. Cheese Roll (2): Crab meat mixed w/ Cream Cheese and Rolled w/ Spring roll wrapper. Then Deep fried. Served with sweet and sour sauce. - $4.50</div></li>
+  <li><div class="menu-item">A3. Veggie Potsticker (5): Fried Potsticker (Dumpling). Served with sweet garlic soy sauce. - $5.50</div></li>
+  <li><div class="menu-item">A4. Fried Chicken Dumpling: Served w/ Sweet Garlic Soy Sauce  - $6.95</div></li>
+  <li><div class="menu-item">A6. Chicken Satay (4): Grilled Marinated Chicken served w/ Peanut sauce. (GF) - $7.50</div></li>
+  <li><div class="menu-item">A8. Steamed VEG Dumpling: Topped w/ Panang Curry sauce (GF) - $5.95</div></li>
+  <li><div class="menu-item">A9. Shrimp Dumpling (5): Steamed. Then Served w/ Panang Curry Sauce. (GF) - $6.95</div></li>
+  <li><div class="menu-item">A10. Edamame: Steamed Soy Bean Pod. Sprinkled w/ salt. (GF) - $4.95</div></li>
+  <li><div class="menu-item">A11. Golden Tofu: Fried Tofu Served with sweet and sour dipping sauce sprinkled with crushed peanuts. (GF) - $5.50</div></li>
+  <li><div class="menu-item">A12. Roti Canai: Indian Pancake Served with potato curry sauce - $5.95</div></li>
+  <li><div class="menu-item">A13. Basil Roll (2): Shrimp, basil leaves , lettuce and rice noodle wrapped in rice paper served with plum sauce. - $5.50</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Soup</h2></summary>
+<ul>
+  <li><div class="menu-item">S1. Tom Yum Seafood: Lemon grass, lime leaves and ginger, Mushroom, Scallion, Thai style hot & sour soup. Seafood Included Shrimp, Calamari, Mussel, Scallop.  - $9.50</div></li>
+  <li><div class="menu-item">S2. Tom-Yum Soup:  - $4.75</div></li>
+  <li><div class="menu-item">S4. Vegetable Soup: Mixed vegetables in clear broth. - $4.00</div></li>
+  <li><div class="menu-item">S5. Wonton Soup: Minced chicken wonton simmered in a light consomme. - $4.25</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Salad</h2></summary>
+<ul>
+  <li><div class="menu-item">S6. Nam Sod: Traditional Thai style of blending minced pork, ginger, onion and peanut, touch of lime juice. (GF) - $7.95</div></li>
+  <li><div class="menu-item">S8. Larb Chicken: Minced chicken with spicy powder, onion and lime juice. (GF) - $8.95</div></li>
+  <li><div class="menu-item">S9. Bangkok Salad: Fresh Vegetables topped with fried tofu and peanut sauce. (GF) - $5.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Sides</h2></summary>
+<ul>
+  <li><div class="menu-item">Side: White Rice:  - $3.00</div></li>
+  <li><div class="menu-item">Side: Steamed Broc:  - $2.50</div></li>
+  <li><div class="menu-item">Side: Steamed Mix Veg:  - $2.50</div></li>
+  <li><div class="menu-item">Side: French Fries:  - $2.75</div></li>
+  <li><div class="menu-item">Side: Curry sauce:  - $3.75</div></li>
+  <li><div class="menu-item">Side: Steam noodle:  - $3.25</div></li>
+  <li><div class="menu-item">Side. Brown Rice:  - $3.75</div></li>
+  <li><div class="menu-item">Side. Steam Chk:  - $3.50</div></li>
+  <li><div class="menu-item">Side: Sticky Rice:  - $4.50</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Lunch Special</h2></summary>
+<ul>
+  <li><div class="menu-item">Lunch- Pad Ka Pow:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Garlic Sauce:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Fresh ginger:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Cashew Nut:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Rama:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pad Prew whan:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pad Prik King:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Black Pepper:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Mix Vegetables:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pad Thai:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pad woon sen:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pad See-Ew:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pad Kee Mao:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Lo Mein:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Basil Fried Rice:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Thai Fried Rice:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Panang Curry:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Yellow Curry:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Green Curry:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Red Curry:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Masaman Curry:  - $9.95</div></li>
+  <li><div class="menu-item">Lunch- Pineapple Fried Rice: Rice stir-fry with eggs, onions, pineapple and curry powder, topped with Cashew nut and scallion. - $11.95</div></li>
+  <li><div class="menu-item">Lunch- Eggplant: Stir-fry eggplant with onions, bell peppers, and basil leaves. - $11.95</div></li>
+  <li><div class="menu-item">Lunch- Tom-yum Fried Rice:  - $11.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Entree</h2></summary>
+<ul>
+  <li><div class="menu-item">E1. Pad Ka-Pow: Stir-fry onion, bell pepper and basil leaves w/ spicy thai sauce - $12.95</div></li>
+  <li><div class="menu-item">E2. Garlic Sauce: Stir-fry Protein w/ garlic and black pepper, served w/ Steamed Broccoli on the bottom. - $12.95</div></li>
+  <li><div class="menu-item">E3. Fresh Ginger: Stir-fry fresh ginger, onion, carrot and mushroom in a light ginger sauce - $12.95</div></li>
+  <li><div class="menu-item">E4. Cashew Nut: Tossed w/ onion, carrot and bell pepper in spicy garlic sauce - $12.95</div></li>
+  <li><div class="menu-item">E5. Rama: Served on Bed of Branched Broccoli, topped w/ warmed Peanut sauce and sprinkled w/ Crushed peanut - $12.95</div></li>
+  <li><div class="menu-item">E6. Pad Prew-Whan: Thai styles sweet and sour w/ onion, pineapple, bell pepper, carrot and cucumber - $12.95</div></li>
+  <li><div class="menu-item">E7. Pad Prik King: Stir-fry green bean and fresh lime leaves in a rich curry paste  - $12.95</div></li>
+  <li><div class="menu-item">E8. Black Pepper:  - $12.95</div></li>
+  <li><div class="menu-item">E9. Teriyaki: Grilled chicken topped w/ teriyaki sauce and sesame seed and served w/ steamed vegetables - $12.95</div></li>
+  <li><div class="menu-item">E10. Mix Vegetables:  - $12.95</div></li>
+  <li><div class="menu-item">E11. Spicy Eggplant: Stir-Fry eggplant with onions, bell peppers, and basil leaves. - $14.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Noodle / Fried Rice</h2></summary>
+<ul>
+  <li><div class="menu-item">N1. Pad Thai: Thin rice noodle stir-fry with egg, bean sprouts, scallion and crushed peanut. (GF) - $12.95</div></li>
+  <li><div class="menu-item">N2. Pad Woon Sen: Stir-fry onion, egg, mushroom, cabbage, carrot, scallion with crystal glass noodle in light soy sauce. - $12.95</div></li>
+  <li><div class="menu-item">N3. Pad See-ew: Big rice noodle sauteed in sweet light brown sauce with egg, broccoli and carrot. - $12.95</div></li>
+  <li><div class="menu-item">N4. Pad Kee Mao: Big rice noodle sauteed in spicy basil sauce with bell pepper, carrot, cabbage, onion and basil leaves. - $12.95</div></li>
+  <li><div class="menu-item">N5. Lo Mein: Stir-fry egg noodle with mix vegetables in light soy sauce. - $12.95</div></li>
+  <li><div class="menu-item">N6. Basil Fried Rice: with onion, bell pepper, carrot and basil leaves. - $12.95</div></li>
+  <li><div class="menu-item">N7. Thai Fried Rice: with onion, scallion and egg. - $12.95</div></li>
+  <li><div class="menu-item">N. Pineapple Fried Rice: Rice stir-fry with eggs, onions, pineapple and curry powder, topped with Cashew nut and scallion. - $14.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Curry</h2></summary>
+<ul>
+  <li><div class="menu-item">C1. Panang Curry: Mild Flavor with basil leaves, broccoli and bell pepper. (GF) - $13.95</div></li>
+  <li><div class="menu-item">C2. Yellow Curry: Indian yellow curry flavor with onion, carrot and potato. (GF) - $13.95</div></li>
+  <li><div class="menu-item">C3. Green Curry: A Traditional Thai curry with bamboo shoot, green bean, bell pepper and basil leaves. (GF) - $13.95</div></li>
+  <li><div class="menu-item">C4. Red Curry: A Traditional Thai curry with bamboo shoot, green bean, bell pepper and basil leaves. (GF) - $13.95</div></li>
+  <li><div class="menu-item">C5. Masaman: Light peanut flavor a sweet curry with onion, potato and topped w/ avocado and roasted cashew nut. (GF) - $13.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Chefs Special</h2></summary>
+<ul>
+  <li><div class="menu-item">CS1. Spicy Catfish: Crispy fried catfish filet sauteed in red curry sauce with young pepper corn, bell pepper, green bean and basil leaves. - $14.95</div></li>
+  <li><div class="menu-item">CS2. Roasted Duck Curry: Duck breast roasted with pineapple, tomato, basil leaves and bell pepper in red curry sauce. - $18.95</div></li>
+  <li><div class="menu-item">CS3. Mango Shrimp: Sauteed with sweet mango chucks, bell pepper in chef's special mango sauce. - $16.95</div></li>
+  <li><div class="menu-item">CS4. Salmon Panang Curry: Pan fried salmon filet with panang curry sauce. (GF) - $17.95</div></li>
+  <li><div class="menu-item">CS5. Crispy Chicken: Fried chicken, pineapple, bell pepper and cucumber with Thai sweet chill sauce. - $15.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Kids Meal</h2></summary>
+<ul>
+  <li><div class="menu-item">K1. Chicken Nuggets w. Fries:  - $5.95</div></li>
+  <li><div class="menu-item">K2. Kids Fried Rice:  - $4.95</div></li>
+  <li><div class="menu-item">K3. Kids Lo Mein:  - $4.95</div></li>
+  <li><div class="menu-item">K4. Fish Stick w. Fries:  - $6.95</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Beverage</h2></summary>
+<ul>
+  <li><div class="menu-item">Soft Drink:  - $2.50</div></li>
+  <li><div class="menu-item">Soda Water:  - $2.00</div></li>
+  <li><div class="menu-item">Ice Tea:  - $2.50</div></li>
+  <li><div class="menu-item">Thai Ice Tea: No Refills - $4.50</div></li>
+  <li><div class="menu-item">Thai Ice Coffee: No Refills - $4.50</div></li>
+</ul></details>
+<details>
+<summary><h2 class="center">Open</h2></summary>
+<ul>
+  <li><div class="menu-item">Duck Sauce: Spring roll Sauce - $0.50</div></li>
+  <li><div class="menu-item">Plum sauce:  - $0.50</div></li>
+  <li><div class="menu-item">Peanut sauce:  - $0.50</div></li>
+  <li><div class="menu-item">Thai Chili oil:  - $0.35</div></li>
+</ul></details>
+
+    </main>
+    <footer>
+        &copy; 2024 Thai Chili Asian Bistro.
+    </footer>
+</body>
+
+</html>
