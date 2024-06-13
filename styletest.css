@@ -1,0 +1,142 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    /* Set initial background color to white */
+    color: #222;
+    /* Set initial text color to black */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Include color transition */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Define styles for dark mode */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Styles for the sun and moon icons */
+.dark-mode-toggle::before {
+    content: '☀️';
+    /* Sun emoji for light mode */
+}
+
+body.dark-mode .dark-mode-toggle::before {
+    content: '🌙';
+    /* Moon emoji for dark mode */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+.image-container:hover .caption {
+    opacity: 1;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+body.dark-mode .footer {
+    background-color: #151515;
+    color: #fdfdfd;
+}
+
+.header {
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #222;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body.dark-mode .header {
+    background-color: #151515;
+    color: #fdfdfd;
+}
+
+@media (max-width: 600px) {
+    .caption {
+        width: 80%;
+    }
+}
