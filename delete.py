@@ -7,7 +7,7 @@ def delete_menu():
     c = conn.cursor()
 
     # Delete everything from the menu table
-    c.execute("DELETE FROM menu")
+    c.execute("DELETE FROM ashevillenc")
 
     # Commit the changes and close the connection
     conn.commit()
